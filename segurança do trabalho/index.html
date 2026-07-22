@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Colaboradores</title>
+    <link rel="stylesheet" href="sys.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="card">
+        <header class="card__header">
+            <span class="card__tag">Gestão</span>
+            <h1 class="card__title">Novo Colaborador</h1>
+        </header>
+
+        <section class="card__body">
+            <form id="form-colaborador" onsubmit="event.preventDefault(); cadastrarColaborador();">
+                <div class="form-group">
+                    <label for="input-noms">Nome</label>
+                    <input type="text" id="input-noms" placeholder="Ex: Ana Silva" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-setor">Setor</label>
+                    <input type="text" id="input-setor" placeholder="Ex: Tecnologia" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-função">Função</label>
+                    <input type="text" id="input-função" placeholder="Ex: Desenvolvedora" required>
+                </div>
+
+                <div class="card__footer">
+                    <button type="submit" class="btn">Cadastrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
