@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Colaboradores</title>
-    <link rel="stylesheet" href="sys.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>seguranca do trabalho</title>
 </head>
 <body>
+    <h1>seguranca do trbalho</h1>
 
-    <main class="card">
-        <header class="card__header">
-            <span class="card__tag">Gestão</span>
-            <h1 class="card__title">Novo Colaborador</h1>
-        </header>
+    <div id="form">
+        <div class="container-inputs">
+            <label for="input-nome">nome:</label>
+            <input id="input-nome" type="text">
+        </div>
+        <div class="container-inputs">
+            <label for="">setor:</label>
+            <input id="input-setor" type="text">
+        </div>
+        <div class="container-inputs">
+            <label for="">função:</label>
+            <input id="input-funcao" type="text">
+        </div>
+        <div class="container-inputs">
+            <label for="">data:</label>
+            <input id="input-data" type="text">
+        </div>
+        <div class="container-inputs" id="div-id">
+            <label for="">validade</label>
+            <input id="input-validade" type="number">
+        </div>
 
-        <section class="card__body">
-            <form id="form-colaborador" onsubmit="event.preventDefault(); cadastrarColaborador();">
-                <div class="form-group">
-                    <label for="input-noms">Nome</label>
-                    <input type="text" id="input-noms" placeholder="Ex: Ana Silva" required>
-                </div>
+        <button onclick="cadastrarfuncionario()">cadastrar funcionario</button>
+        <button onclick="salvarfuncionario()">💾</button>
+        <button onclick="excluirfuncionario()">🗑️</button>
 
-                <div class="form-group">
-                    <label for="input-setor">Setor</label>
-                    <input type="text" id="input-setor" placeholder="Ex: Tecnologia" required>
-                </div>
+    </div>
+    <!-- <dialog id="formulario">
 
-                <div class="form-group">
-                    <label for="input-função">Função</label>
-                    <input type="text" id="input-função" placeholder="Ex: Desenvolvedora" required>
-                </div>
+    </dialog> -->
 
-                <div class="card__footer">
-                    <button type="submit" class="btn">Cadastrar</button>
-                </div>
-            </form>
-        </section>
-    </main>
 
+  
+    <div id="painel-botoes">
+        <button onclick="mostraformulario()"></button>
+       
+     
+
+    </div>
+ 
+
+  
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
+
