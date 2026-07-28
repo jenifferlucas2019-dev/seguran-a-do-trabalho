@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança do Trabalho</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>seguranca do trabalho</title>
 </head>
+
 <body>
-    <h1>seguranca do trbalho</h1>
+
+    <img id="img-principal" src="img/segurança.png">
+
+    <h1>Segurança do Trabalho</h1>
 
     <div id="form">
+
         <div class="container-inputs">
-            <label for="input-nome">nome:</label>
+            <label>Nome:</label>
             <input id="input-nome" type="text">
         </div>
+
         <div class="container-inputs">
-            <label for="">setor:</label>
+            <label>Setor:</label>
             <input id="input-setor" type="text">
         </div>
+
         <div class="container-inputs">
-            <label for="">função:</label>
+            <label>Função:</label>
             <input id="input-funcao" type="text">
         </div>
+
         <div class="container-inputs">
-            <label for="">data:</label>
-            <input id="input-data" type="text">
-        </div>
-        <div class="container-inputs" id="div-id">
-            <label for="">validade</label>
-            <input id="input-validade" type="number">
+            <label>Data:</label>
+            <input id="input-data" type="date">
         </div>
 
-        <button onclick="cadastrarfuncionario()">cadastrar funcionario</button>
-        <button onclick="salvarfuncionario()">💾</button>
-        <button onclick="excluirfuncionario()">🗑️</button>
+        <div class="container-inputs">
+            <label>Validade:</label>
+            <input id="input-validade" type="date">
+        </div>
+
+        <button onclick="cadastrarFuncionario()">Cadastrar</button>
+        <button onclick="pesquisarFuncionario()">Pesquisar</button>
+        <button onclick="excluirFuncionario()">Excluir</button>
 
     </div>
-    <!-- <dialog id="formulario">
 
-    </dialog> -->
+    <hr>
 
+    <div id="painel-funcionario"></div>
 
-  
-    <div id="painel-botoes">
-        <button onclick="mostraformulario()"></button>
-       
-     
-
-    </div>
- 
-
-  
-
-    
     <script src="script.js"></script>
-</body>
-</html>
 
+</body>
+
+</html>
